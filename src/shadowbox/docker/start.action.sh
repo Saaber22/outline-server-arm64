@@ -45,6 +45,7 @@ declare -ar docker_bindings=(
   -e "SB_CERTIFICATE_FILE=${SB_CERTIFICATE_FILE}"
   -e "SB_PRIVATE_KEY_FILE=${SB_PRIVATE_KEY_FILE}"
   -e "SB_METRICS_URL=${SB_METRICS_URL:-https://dev.metrics.getoutline.org}"
+  -e "SHADOWSOCKS_BRIDGES=on"
 )
 
 readonly IMAGE="${SB_IMAGE:-outline/shadowbox}"
